@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ShoppingCart, Users, AlertTriangle, Eye, Globe, MessageCircle, Megaphone, ExternalLink, Languages } from 'lucide-react';
+import { Mail, ShoppingCart, Users, AlertTriangle, Eye, Globe, MessageCircle, Megaphone, ExternalLink, Languages, Shield, Zap, Target, Download, Smartphone, Lock } from 'lucide-react';
 
 // Language Context
 const LanguageContext = createContext({
@@ -14,10 +14,47 @@ const translations = {
   ar: {
     // Navigation
     home: 'الرئيسية',
+    book: 'الكتاب',
     groups: 'المجموعات',
     march: 'المسيرات',
     
-    // Hero Section
+    // Site Name
+    siteName: 'الجامع',
+    siteNameEn: 'ALJAMAE',
+    
+    // Home Page - Aljamae
+    homeHeroTitle: 'الجامع',
+    homeHeroSubtitle: 'حركة عالمية من أجل الحرية والحقيقة',
+    homeHeroDescription: 'انضم إلى آلاف المقاومين حول العالم في كشف الأجندة الخفية ومحاربة القوى التي تسعى للسيطرة على البشرية. معاً نستطيع تغيير العالم.',
+    joinMovement: 'انضم للحركة',
+    downloadApp: 'حمل التطبيق',
+    fightForFreedom: 'نحارب من أجل الحرية',
+    
+    // Home Features
+    globalResistance: 'مقاومة عالمية',
+    globalResistanceDesc: 'شبكة عالمية من المقاومين الذين يكشفون الحقيقة ويحاربون الظلم في كل مكان.',
+    secureComms: 'تواصل آمن',
+    secureCommsDesc: 'تطبيق الجامع يوفر تواصلاً مشفراً وآمناً بعيداً عن أعين المراقبة والرقابة.',
+    truthExposed: 'كشف الحقيقة',
+    truthExposedDesc: 'نكشف الأجندة الخفية والمؤامرات العالمية التي تهدف للسيطرة على الشعوب.',
+    
+    // App Section
+    theAljamaApp: 'تطبيق الجامع',
+    appDescription: 'تطبيق آمن ومشفر للتواصل بين أعضاء الحركة. شارك المعلومات، نظم الأحداث، وتواصل مع المقاومين حول العالم.',
+    appFeatures: 'مميزات التطبيق',
+    encryptedMessaging: 'رسائل مشفرة',
+    anonymousGroups: 'مجموعات مجهولة',
+    secureFileSharing: 'مشاركة ملفات آمنة',
+    eventOrganizing: 'تنظيم الأحداث',
+    downloadNow: 'حمل الآن',
+    comingSoon: 'قريباً',
+    
+    // Mission Section
+    ourMission: 'مهمتنا',
+    missionDescription: 'نحن حركة عالمية تهدف لكشف الحقيقة ومحاربة القوى الخفية التي تسعى للسيطرة على العالم. نؤمن بحق الشعوب في الحرية والكرامة.',
+    joinResistance: 'انضم للمقاومة',
+    
+    // Book Page
     heroTitle: 'قرن الشيطان',
     heroSubtitle: 'كشف شياطين عصرنا',
     heroDescription: 'كتاب مدمر باللغة العربية يكشف عن محركي الدمى الذين ينظمون الصراعات العالمية من الظلال. اكتشف الحقيقة التي لا يريدونك أن تعرفها عن الحرب والسلطة والقوى التي تشكل عالمنا.',
@@ -116,10 +153,47 @@ const translations = {
   en: {
     // Navigation
     home: 'Home',
+    book: 'Book',
     groups: 'Groups',
     march: 'March',
     
-    // Hero Section
+    // Site Name
+    siteName: 'ALJAMAE',
+    siteNameEn: 'ALJAMAE',
+    
+    // Home Page - Aljamae
+    homeHeroTitle: 'ALJAMAE',
+    homeHeroSubtitle: 'A Global Movement for Freedom and Truth',
+    homeHeroDescription: 'Join thousands of resisters worldwide in exposing hidden agendas and fighting the forces that seek to control humanity. Together, we can change the world.',
+    joinMovement: 'JOIN THE MOVEMENT',
+    downloadApp: 'DOWNLOAD APP',
+    fightForFreedom: 'FIGHTING FOR FREEDOM',
+    
+    // Home Features
+    globalResistance: 'Global Resistance',
+    globalResistanceDesc: 'A worldwide network of resisters exposing truth and fighting injustice everywhere.',
+    secureComms: 'Secure Communications',
+    secureCommsDesc: 'Aljamae app provides encrypted, secure communication away from surveillance and censorship.',
+    truthExposed: 'Truth Exposed',
+    truthExposedDesc: 'We expose hidden agendas and global conspiracies aimed at controlling populations.',
+    
+    // App Section
+    theAljamaApp: 'The Aljamae App',
+    appDescription: 'A secure, encrypted app for communication between movement members. Share information, organize events, and connect with resisters worldwide.',
+    appFeatures: 'App Features',
+    encryptedMessaging: 'Encrypted Messaging',
+    anonymousGroups: 'Anonymous Groups',
+    secureFileSharing: 'Secure File Sharing',
+    eventOrganizing: 'Event Organizing',
+    downloadNow: 'Download Now',
+    comingSoon: 'Coming Soon',
+    
+    // Mission Section
+    ourMission: 'Our Mission',
+    missionDescription: 'We are a global movement aimed at exposing truth and fighting hidden forces that seek to control the world. We believe in peoples\' right to freedom and dignity.',
+    joinResistance: 'Join the Resistance',
+    
+    // Book Page
     heroTitle: 'THE SCUM OF NATIONS',
     heroSubtitle: 'Exposing the Devils of Our Time',
     heroDescription: 'A devastating expose in Arabic revealing the puppet masters who orchestrate global conflicts from the shadows. Discover the truth they don\'t want you to know about war, power, and the forces shaping our world.',
@@ -245,6 +319,7 @@ function Navigation() {
   
   const navItems = [
     { path: '/', label: t('home'), icon: Globe },
+    { path: '/book', label: t('book'), icon: ShoppingCart },
     { path: '/groups', label: t('groups'), icon: MessageCircle },
     { path: '/march', label: t('march'), icon: Megaphone },
   ];
@@ -254,10 +329,10 @@ function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            <AlertTriangle className="text-amber-500 w-8 h-8" />
+            <Shield className="text-amber-500 w-8 h-8" />
             <div>
               <h1 className="text-xl font-black text-white">
-                {language === 'ar' ? 'قرن الشيطان' : 'THE SCUM OF NATIONS'}
+                {t('siteName')}
               </h1>
             </div>
           </Link>
@@ -294,8 +369,163 @@ function Navigation() {
   );
 }
 
-// Home Page Component
+// Home Page Component (Aljamae)
 function HomePage() {
+  const { t } = useContext(LanguageContext);
+  
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="pt-20 pb-16 bg-gradient-to-br from-gray-900 via-red-900/20 to-black">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2 space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-6xl lg:text-8xl font-black text-white leading-tight">
+                  {t('homeHeroTitle')}
+                </h2>
+                <p className="text-xl font-semibold text-red-400">{t('homeHeroSubtitle')}</p>
+              </div>
+              
+              <p className="text-xl text-gray-300 leading-relaxed">
+                {t('homeHeroDescription')}
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+                  <Shield className="w-5 h-5" />
+                  {t('joinMovement')}
+                </button>
+                <button className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2">
+                  <Download className="w-5 h-5" />
+                  {t('downloadApp')}
+                </button>
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2 flex justify-center">
+              <div className="relative">
+                <div className="w-80 h-80 bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-full shadow-2xl flex items-center justify-center">
+                  <Shield className="w-32 h-32 text-amber-400" />
+                </div>
+                <div className="absolute -top-4 -right-4 bg-red-800 text-amber-200 px-4 py-2 rounded-full font-bold text-sm transform rotate-12">
+                  {t('fightForFreedom')}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-black/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
+                <Users className="w-12 h-12 text-amber-500 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">{t('globalResistance')}</h4>
+                <p className="text-gray-400">{t('globalResistanceDesc')}</p>
+              </div>
+              
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-red-800/30 hover:border-red-700/50 transition-all">
+                <Lock className="w-12 h-12 text-red-600 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">{t('secureComms')}</h4>
+                <p className="text-gray-400">{t('secureCommsDesc')}</p>
+              </div>
+              
+              <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
+                <Eye className="w-12 h-12 text-amber-500 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">{t('truthExposed')}</h4>
+                <p className="text-gray-400">{t('truthExposedDesc')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App Section */}
+      <section className="py-20 bg-gradient-to-br from-red-900/20 via-gray-900 to-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h3 className="text-4xl font-black mb-8 text-white">
+                {t('theAljamaApp')}
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                {t('appDescription')}
+              </p>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="lg:w-1/2">
+                <div className="bg-black/60 p-8 rounded-lg border-2 border-amber-600/50">
+                  <h4 className="text-2xl font-bold text-amber-400 mb-6">{t('appFeatures')}</h4>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <MessageCircle className="w-6 h-6 text-green-500" />
+                      <span className="text-white font-semibold">{t('encryptedMessaging')}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Users className="w-6 h-6 text-green-500" />
+                      <span className="text-white font-semibold">{t('anonymousGroups')}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Shield className="w-6 h-6 text-green-500" />
+                      <span className="text-white font-semibold">{t('secureFileSharing')}</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Target className="w-6 h-6 text-green-500" />
+                      <span className="text-white font-semibold">{t('eventOrganizing')}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="lg:w-1/2 flex justify-center">
+                <div className="relative">
+                  <div className="w-64 h-96 bg-gradient-to-br from-gray-800 to-black rounded-3xl shadow-2xl border-4 border-amber-600/30 flex items-center justify-center">
+                    <Smartphone className="w-24 h-24 text-amber-400" />
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                    <button className="bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-lg font-bold transition-all transform hover:scale-105">
+                      {t('downloadNow')} - {t('comingSoon')}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-4xl font-black mb-8 text-white">
+              {t('ourMission')}
+            </h3>
+            
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+              {t('missionDescription')}
+            </p>
+            
+            <div className="bg-gradient-to-r from-red-900/20 via-amber-900/10 to-black/50 p-8 rounded-lg border border-amber-600/30">
+              <button className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3 mx-auto">
+                <Shield className="w-6 h-6" />
+                {t('joinResistance')}
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// Book Page Component
+function BookPage() {
   const { t } = useContext(LanguageContext);
   
   return (
@@ -747,16 +977,16 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <AlertTriangle className="text-amber-500 w-6 h-6" />
+            <Shield className="text-amber-500 w-6 h-6" />
             <div>
               <span className="font-bold text-white">
-                {language === 'ar' ? 'قرن الشيطان' : 'THE SCUM OF NATIONS'}
+                {t('siteName')}
               </span>
             </div>
           </div>
           
           <div className="text-gray-400 text-sm text-center md:text-right">
-            <p>© 2025 The Scum of Nations. {t('allRightsReserved')}</p>
+            <p>© 2025 Aljamae. {t('allRightsReserved')}</p>
             <p className="mt-1">{t('truthCannotBeSuppressed')}</p>
           </div>
         </div>
@@ -774,6 +1004,7 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/book" element={<BookPage />} />
             <Route path="/groups" element={<GroupsPage />} />
             <Route path="/march" element={<MarchPage />} />
           </Routes>
