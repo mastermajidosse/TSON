@@ -20,7 +20,6 @@ function Navigation() {
             <AlertTriangle className="text-amber-500 w-8 h-8" />
             <div>
               <h1 className="text-xl font-black text-white">THE SCUM OF NATIONS</h1>
-              <p className="text-amber-400 text-sm font-bold">قرن الشيطان</p>
             </div>
           </Link>
           <nav className="hidden md:flex space-x-6">
