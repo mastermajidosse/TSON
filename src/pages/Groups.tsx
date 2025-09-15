@@ -45,7 +45,7 @@ export function GroupsPage() {
   ];
 
   return (
-    <div className="pt-20 pb-16 min-h-screen bg-gradient-to-br from-gray-900 via-red-900/10 to-black">
+    <div className="py-[13%] min-h-screen bg-gradient-to-br from-gray-900 via-red-900/10 to-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
