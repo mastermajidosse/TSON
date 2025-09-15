@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail, MessageCircle, Megaphone } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function BookPage() {
@@ -180,6 +181,44 @@ export function BookPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Custom Navigation Section */}
+      <section className="bg-black py-8 border-t border-amber-600/30">
+        <div className="container mx-auto px-4">
+          <nav className="flex justify-center">
+            <div className="flex space-x-8 rtl:space-x-reverse">
+              <Link
+                to="/"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+              >
+                <Globe className="w-4 h-4" />
+                {t('home')}
+              </Link>
+              <Link
+                to="/book"
+                className="flex items-center gap-2 text-amber-400 font-semibold px-2"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                {t('book')}
+              </Link>
+              <Link
+                to="/groups"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+              >
+                <MessageCircle className="w-4 h-4" />
+                {t('groups')}
+              </Link>
+              <Link
+                to="/march"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+              >
+                <Megaphone className="w-4 h-4" />
+                {t('march')}
+              </Link>
+            </div>
+          </nav>
         </div>
       </section>
     </>
