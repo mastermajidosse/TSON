@@ -19,7 +19,7 @@ const translations = {
     homeHeroDescription: 'انضم إلى آلاف المقاومين حول العالم في المساعدة والخير والبناء ونشر الحقيقة و القصاء على من يسعى للسيطرة على البشرية. معاً بادن الله نغير العالم.',
     joinMovement: 'انضم للحركة',
     downloadApp: 'حمل التطبيق',
-    fightForFreedom: 'نحارب من أجل الحرية',
+    fightForFreedom: 'حارب من أجل الحرية',
     
     // Home Features
     globalResistance: 'مقاومة عالمية',
