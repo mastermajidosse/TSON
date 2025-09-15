@@ -29,3 +29,23 @@
 [dir="rtl"] .gap-4 {
   flex-direction: row-reverse;
 }
+
+/* Additional RTL navigation spacing */
+[dir="rtl"] .space-x-6 > * + * {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+/* Logo spacing for RTL */
+.rtl\:mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ltr\:ml-3 {
+  margin-left: 0.75rem;
+}
+
+/* First navigation item margin for Arabic */
+.ml-\[5\%\] {
+  margin-left: 5%;
+}
