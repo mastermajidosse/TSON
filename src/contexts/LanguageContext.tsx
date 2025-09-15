@@ -23,7 +23,7 @@ const translations = {
     
     // Home Features
     globalResistance: 'مقاومة عالمية',
-    globalResistanceDesc: 'شبكة عالمية من المقاومين الذين يؤمنون بالحق ويحاربون الظلم في كل مكان.',
+    globalResistanceDesc: 'شبكة عالمية من المقاومين الذين يؤمنون بالحق ويحاربون الظلم.',
     secureComms: 'تواصل آمن',
     secureCommsDesc: 'تطبيق الجامع يوفر تواصلاً مشفراً وآمناً بعيداً عن أعين المراقبة والرقابة.',
     truthExposed: 'كشف الحقيقة',
