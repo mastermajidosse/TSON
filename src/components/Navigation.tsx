@@ -34,8 +34,6 @@ export function Navigation() {
                   key={path}
                   to={path}
                   className={`flex items-center gap-2 font-semibold transition-colors px-2 ${
-                    index === 0 && language === 'ar' ? 'ml-[5%]' : ''
-                  } ${
                     location.pathname === path
                       ? 'text-amber-400'
                       : 'text-gray-300 hover:text-amber-400'

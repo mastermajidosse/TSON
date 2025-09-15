@@ -8,7 +8,7 @@ export function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-900 via-red-900/20 to-black">
+      <section className="py-[13%] bg-gradient-to-br from-gray-900 via-red-900/20 to-black">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 space-y-8">
