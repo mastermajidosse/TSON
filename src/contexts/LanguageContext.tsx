@@ -15,7 +15,7 @@ const translations = {
     
     // Home Page - Aljamae
     homeHeroTitle: 'الجامع',
-    homeHeroSubtitle: 'حركة عالمية من أجل جمع الناس لنصرة الحق',
+    homeHeroSubtitle: 'حركة عالمية تهدف لجمع الناس لنصرة الحق',
     homeHeroDescription: 'انضم إلى آلاف المقاومين حول العالم في كشف الأجندة الخفية ومحاربة القوى التي تسعى للسيطرة على البشرية. معاً نستطيع تغيير العالم.',
     joinMovement: 'انضم للحركة',
     downloadApp: 'حمل التطبيق',
