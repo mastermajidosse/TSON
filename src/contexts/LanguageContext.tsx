@@ -27,7 +27,7 @@ const translations = {
     secureComms: 'تواصل آمن',
     secureCommsDesc: 'تطبيق الجامع يوفر تواصلاً مشفراً وآمناً بعيداً عن أعين المراقبة والرقابة.',
     truthExposed: 'كشف الحقيقة',
-    truthExposedDesc: 'نكشف الأجندة الخفية والمؤامرات العالمية التي تهدف للسيطرة على الشعوب.',
+    truthExposedDesc: 'نكشف الأجندة الخفية ونساعد في رفع الظلم عن غزة.',
     
     // App Section
     theAljamaApp: 'تطبيق الجامع',
