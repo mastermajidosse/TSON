@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail, MessageCircle, Megaphone } from 'lucide-react';
+import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail, MessageCircle, Megaphone, Heart } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function BookPage() {
