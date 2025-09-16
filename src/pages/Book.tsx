@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail, MessageCircle, Megaphone, Heart } from 'lucide-react';
+import { ShoppingCart, Eye, Users, Globe, AlertTriangle, Mail, MessageCircle, Megaphone, Heart, Target, Shield, HandHeart } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function BookPage() {
@@ -27,7 +27,7 @@ export function BookPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="#buy" 
-                  className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="bg-green-800 hover:bg-green-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
                 >
                   <ShoppingCart className="w-5 h-5" />
                   {t('getTruthNow')}
@@ -46,7 +46,7 @@ export function BookPage() {
               <div className="relative">
                 <div className="w-80 h-96 bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
                   <img 
-                    src="/cover2.png" 
+                    src="/bookcov.png" 
                     alt="حثالة الأمم Book Cover" 
                     className="w-full h-full object-cover"
                   />
@@ -70,21 +70,21 @@ export function BookPage() {
             
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
-                <Users className="w-12 h-12 text-amber-500 mb-4" />
-                <h4 className="text-xl font-bold text-white mb-3">{t('shadowNetworks')}</h4>
-                <p className="text-gray-400">{t('shadowNetworksDesc')}</p>
+                <Target className="w-12 h-12 text-amber-500 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">من هو العدو الأكبر</h4>
+                <p className="text-gray-400">من هو العدو الأكبر وكيف وما مقدار القوة التي يسيطر بها على العالم وما مكامن ضعفه</p>
               </div>
               
               <div className="bg-gray-800/50 p-6 rounded-lg border border-red-800/30 hover:border-red-700/50 transition-all">
-                <Globe className="w-12 h-12 text-red-600 mb-4" />
-                <h4 className="text-xl font-bold text-white mb-3">{t('warMachine')}</h4>
-                <p className="text-gray-400">{t('warMachineDesc')}</p>
+                <Shield className="w-12 h-12 text-red-600 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">من يتحكم خلف الكواليس</h4>
+                <p className="text-gray-400">من يتحكم خلف الكواليس وكيف يمكن مواجهتهم وتحدي نظامهم العالمي</p>
               </div>
               
               <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
-                <AlertTriangle className="w-12 h-12 text-amber-500 mb-4" />
-                <h4 className="text-xl font-bold text-white mb-3">{t('hiddenAgenda')}</h4>
-                <p className="text-gray-400">{t('hiddenAgendaDesc')}</p>
+                <HandHeart className="w-12 h-12 text-amber-500 mb-4" />
+                <h4 className="text-xl font-bold text-white mb-3">كيف تساعد في التغيير</h4>
+                <p className="text-gray-400">كيف تساعد انت في التغيير وكيف تنصر الحق</p>
               </div>
             </div>
             
