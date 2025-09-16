@@ -8,6 +8,7 @@ import { HomePage } from './pages/Home';
 import { BookPage } from './pages/Book';
 import { GroupsPage } from './pages/Groups';
 import { MarchPage } from './pages/March';
+import { DonationsPage } from './pages/Donations';
 
 function AppContent() {
   const location = useLocation();
