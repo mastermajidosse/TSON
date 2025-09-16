@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Shield, Globe, MessageCircle, Megaphone, Languages, ShoppingCart } from 'lucide-react';
+import { Shield, Globe, MessageCircle, Megaphone, Languages, ShoppingCart, Heart } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function Navigation() {
@@ -28,7 +28,7 @@ export function Navigation() {
           </Link>
           
           <div className="flex items-center gap-6">
-            <nav className="hidden md:flex space-x-6 rtl:space-x-reverse">
+            <nav className="hidden md:flex space-x-4 rtl:space-x-reverse">
               {navItems.map(({ path, label, icon: Icon }, index) => (
                 <Link
                   key={path}

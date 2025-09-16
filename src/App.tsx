@@ -21,6 +21,7 @@ function AppContent() {
         <Route path="/book" element={<BookPage />} />
         <Route path="/groups" element={<GroupsPage />} />
         <Route path="/march" element={<MarchPage />} />
+        <Route path="/donations" element={<DonationsPage />} />
       </Routes>
       <Footer />
     </div>

@@ -217,6 +217,13 @@ export function BookPage() {
                 <Megaphone className="w-4 h-4" />
                 {t('march')}
               </Link>
+              <Link
+                to="/donations"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+              >
+                <Heart className="w-4 h-4" />
+                {t('donations')}
+              </Link>
             </div>
           </nav>
         </div>
