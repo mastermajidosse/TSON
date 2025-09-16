@@ -46,8 +46,8 @@ export function BookPage() {
               <div className="relative">
                 <div className="w-80 h-96 bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
                   <img 
-                    src="/cover(1)(1).png" 
-                    alt="The Scum of Nations Book Cover" 
+                    src="/cover2.png" 
+                    alt="حثالة الأمم Book Cover" 
                     className="w-full h-full object-cover"
                   />
                 </div>

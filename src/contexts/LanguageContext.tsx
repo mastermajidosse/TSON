@@ -46,7 +46,7 @@ const translations = {
     joinResistance: 'انضم للمقاومة',
     
     // Book Page
-    heroTitle: 'قرن الشيطان',
+    heroTitle: 'حثالة الأمم',
     heroSubtitle: 'كشف العدو الحقيقي',
     heroDescription: 'كتاب عن الابادة الجماعية وكيف وصل الحال بالمسلمين حول العالم بمئات الملايين الى التواطئ والخنوع. اكتشف الحقيقة التي لا يريدونك أن تعرفها عن الحرب والسلطة والقوى التي تشكل عالمنا وكيف تواجهها وتقتلها للأبد',
     getTruthNow: 'احصل على الكتاب الآن',
@@ -119,7 +119,7 @@ const translations = {
     // Telegram Groups
     truthSeekersUnited: 'متحدون في البحث عن الحقيقة',
     truthSeekersDesc: 'مجموعة النقاش الرئيسية للقراء والباحثين عن الحقيقة',
-    scumReadersGroup: 'قراء قرن الشيطان',
+    scumReadersGroup: 'قراء حثالة الأمم',
     scumReadersDesc: 'مجموعة حصرية لقراء الكتاب لمناقشة الكشوفات',
     globalAwakening: 'الصحوة العالمية',
     globalAwakeningDesc: 'مجتمع دولي لكشف المؤامرات العالمية',
@@ -185,7 +185,7 @@ const translations = {
     joinResistance: 'Join the Resistance',
     
     // Book Page
-    heroTitle: 'THE SCUM OF NATIONS',
+    heroTitle: 'حثالة الأمم',
     heroSubtitle: 'Exposing the Devils of Our Time',
     heroDescription: 'A devastating expose in Arabic revealing the puppet masters who orchestrate global conflicts from the shadows. Discover the truth they don\'t want you to know about war, power, and the forces shaping our world.',
     getTruthNow: 'GET THE TRUTH NOW',
@@ -258,7 +258,7 @@ const translations = {
     // Telegram Groups
     truthSeekersUnited: 'Truth Seekers United',
     truthSeekersDesc: 'Main discussion group for readers and truth seekers',
-    scumReadersGroup: 'Scum of Nations Readers',
+    scumReadersGroup: 'حثالة الأمم Readers',
     scumReadersDesc: 'Exclusive group for book readers to discuss revelations',
     globalAwakening: 'Global Awakening',
     globalAwakeningDesc: 'International community exposing global conspiracies',
