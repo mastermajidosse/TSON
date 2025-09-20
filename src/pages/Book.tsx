@@ -44,9 +44,9 @@ export function BookPage() {
             
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
-                <div className="w-80 h-96 bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
+                <div className="w-72 h-[480px] bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
                   <img 
-                    src="/bookcov.png" 
+                    src="/image.png" 
                     alt="حثالة الأمم Book Cover" 
                     className="w-full h-full object-cover"
                   />
@@ -118,16 +118,26 @@ export function BookPage() {
               </div>
               
               <div className="space-y-4">
-                <button className="w-full bg-red-800 hover:bg-red-900 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3">
-                  <div className="w-6 h-6 bg-pink-600 rounded flex items-center justify-center">
+                <a 
+                  href="https://elmajid.gumroad.com/l/demonshorn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-amber-600 hover:bg-amber-700 text-black py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                >
+                  <div className="w-6 h-6 bg-amber-800 rounded flex items-center justify-center">
                     <span className="text-white text-xs font-bold">G</span>
                   </div>
-                  {t('buyOnGumroad')}
-                </button>
+                  Gumroad
+                </a>
                 
-                <button className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all border-2 border-gray-600 hover:border-amber-500">
-                  {t('directPurchase')}
-                </button>
+                <a 
+                  href="https://www.instagram.com/atgaza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all border-2 border-gray-600 hover:border-amber-500"
+                >
+                  {t('freeBookRequest')}
+                </a>
               </div>
               
               <div className="mt-6 text-sm text-gray-400">
