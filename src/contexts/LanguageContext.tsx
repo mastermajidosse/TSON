@@ -69,7 +69,7 @@ const translations = {
     // Buy Section
     getYourCopy: 'احصل على نسختك',
     today: 'الآن',
-    dontLetTruthHidden: 'لا تدع الحقيقة تبقى مخفية. سلح نفسك بالمعرفة التي يمكن أن تغير كل شيء.',
+    dontLetTruthHidden: 'لا تدع الحقيقة مخفية. سلح نفسك بالمعرفة التي يمكن أن تغير كل شيء.',
     digitalEdition: 'النسخة الرقمية متاحة الآن',
     physicalCopies: 'النسخ المطبوعة قريباً',
     payWithPaypal: 'ادفع بـ PayPal',
