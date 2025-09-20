@@ -48,7 +48,7 @@ const translations = {
     
     // Book Page
     heroTitle: 'يا حثالة الأمم',
-    heroSubtitle: 'كشف العدو الحقيقي',
+    heroSubtitle: 'فهم أعمق للقضية',
     heroDescription: 'كتاب عن الابادة الجماعية وكيف وصل الحال بالمسلمين حول العالم الى التواطئ والخنوع. معلومات ستغير وجهة نظرك حول العدو الحقيقي',
     getTruthNow: 'احصل على الكتاب الآن',
     learnMore: 'اعرف المزيد',
