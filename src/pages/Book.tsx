@@ -122,10 +122,10 @@ export function BookPage() {
                   href="https://elmajid.gumroad.com/l/demonshorn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-pink-600 hover:bg-pink-700 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                  className="w-full bg-pink-600 hover:bg-pink-700 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3 mb-3"
                 >
-                  <div className="w-6 h-6 bg-amber-800 rounded flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">G</span>
+                  <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
+                    <span className="text-pink-600 text-xs font-bold">G</span>
                   </div>
                   Gumroad
                 </a>
