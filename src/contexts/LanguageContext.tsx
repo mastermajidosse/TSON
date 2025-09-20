@@ -47,7 +47,7 @@ const translations = {
     joinResistance: 'انضم للمقاومة',
     
     // Book Page
-    heroTitle: 'حثالة الأمم',
+    heroTitle: 'يا حثالة الأمم',
     heroSubtitle: 'كشف العدو الحقيقي',
     heroDescription: 'كتاب عن الابادة الجماعية وكيف وصل الحال بالمسلمين حول العالم الى التواطئ والخنوع. معلومات ستغير وجهة نظرك حول العدو الحقيقي',
     getTruthNow: 'احصل على الكتاب الآن',
