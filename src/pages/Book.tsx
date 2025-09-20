@@ -9,18 +9,18 @@ export function BookPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-[13%] bg-gradient-to-br from-gray-900 via-red-900/20 to-black">
+      <section className="py-16 md:py-[13%] bg-gradient-to-br from-gray-900 via-red-900/20 to-black">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 space-y-8">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="lg:w-1/2 space-y-6 lg:space-y-8 text-center lg:text-left">
               <div className="space-y-4">
-                <h2 className="text-5xl lg:text-7xl font-black text-white leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight">
                   {t('heroTitle')}
                 </h2>
-                <p className="text-xl font-semibold text-red-400">{t('heroSubtitle')}</p>
+                <p className="text-lg sm:text-xl font-semibold text-red-400">{t('heroSubtitle')}</p>
               </div>
               
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 {t('heroDescription')}
               </p>
               
@@ -44,7 +44,7 @@ export function BookPage() {
             
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
-                <div className="w-72 h-[480px] bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
+                <div className="w-64 h-[400px] sm:w-72 sm:h-[480px] bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300 overflow-hidden">
                   <img 
                     src="/image.png" 
                     alt="حثالة الأمم Book Cover" 
@@ -61,14 +61,14 @@ export function BookPage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-black/50">
+      <section id="about" className="py-12 md:py-20 bg-black/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-4xl font-black text-center mb-12 text-white">
+            <h3 className="text-3xl sm:text-4xl font-black text-center mb-8 md:mb-12 text-white">
               {t('whatTheyDontWant')} <span className="text-amber-400">{t('know')}</span>
             </h3>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
               <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
                 <Target className="w-12 h-12 text-amber-500 mb-4" />
                 <h4 className="text-xl font-bold text-white mb-3">من هو العدو الأكبر</h4>
@@ -99,22 +99,22 @@ export function BookPage() {
       </section>
 
       {/* Buy Section */}
-      <section id="buy" className="py-20 bg-gradient-to-br from-red-900/20 via-gray-900 to-black">
+      <section id="buy" className="py-12 md:py-20 bg-gradient-to-br from-red-900/20 via-gray-900 to-black">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-4xl font-black mb-8 text-white">
+          <div className="max-w-3xl mx-auto text-center px-4">
+            <h3 className="text-3xl sm:text-4xl font-black mb-6 md:mb-8 text-white">
               {t('getYourCopy')} <span className="text-amber-400">{t('today')}</span>
             </h3>
             
-            <p className="text-xl text-gray-300 mb-12">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 md:mb-12">
               {t('dontLetTruthHidden')}
             </p>
             
-            <div className="bg-black/60 p-8 rounded-lg border-2 border-amber-600/50 max-w-md mx-auto">
+            <div className="bg-black/60 p-6 md:p-8 rounded-lg border-2 border-amber-600/50 max-w-md mx-auto">
               <div className="mb-6">
-                <div className="text-3xl font-black text-white mb-2">$10</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-2">$10</div>
                 <div className="text-gray-400">{t('digitalEdition')}</div>
-                <div className="text-sm text-amber-400 mt-1">{t('physicalCopies')}</div>
+                <div className="text-xs md:text-sm text-amber-400 mt-1">{t('physicalCopies')}</div>
               </div>
               
               <div className="space-y-4">
@@ -122,7 +122,7 @@ export function BookPage() {
                   href="https://elmajid.gumroad.com/l/demonshorn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-black py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                  className="w-full bg-pink-600 hover:bg-pink-700 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3"
                 >
                   <div className="w-6 h-6 bg-amber-800 rounded flex items-center justify-center">
                     <span className="text-white text-xs font-bold">G</span>
@@ -134,7 +134,7 @@ export function BookPage() {
                   href="https://www.instagram.com/atgaza"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all border-2 border-gray-600 hover:border-amber-500"
+                  className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all border-2 border-gray-600 hover:border-amber-500"
                 >
                   {t('freeBookRequest')}
                 </a>
@@ -152,7 +152,7 @@ export function BookPage() {
               </div>
             </div>
             
-            <p className="text-amber-400 font-bold mt-8 text-lg">
+            <p className="text-amber-400 font-bold mt-6 md:mt-8 text-base md:text-lg px-4">
               {t('warningMessage')}
             </p>
           </div>
@@ -160,32 +160,32 @@ export function BookPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-black">
+      <section id="contact" className="py-12 md:py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-4xl font-black mb-8 text-white">
+            <h3 className="text-3xl sm:text-4xl font-black mb-6 md:mb-8 text-white">
               {t('contactThe')} <span className="text-amber-400">{t('author')}</span>
             </h3>
             
-            <p className="text-xl text-gray-300 mb-12">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 md:mb-12">
               {t('contactDescription')}
             </p>
             
-            <div className="bg-gray-800/50 p-8 rounded-lg border border-amber-600/30">
+            <div className="bg-gray-800/50 p-6 md:p-8 rounded-lg border border-amber-600/30">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <Mail className="w-8 h-8 text-amber-500" />
-                <span className="text-2xl font-bold text-white">{t('getInTouch')}</span>
+                <span className="text-xl md:text-2xl font-bold text-white">{t('getInTouch')}</span>
               </div>
               
               <div className="space-y-4">
                 <a 
                   href="mailto:mastermajidosse@gmail.com" 
-                  className="block bg-red-800 hover:bg-red-900 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
+                  className="block bg-red-800 hover:bg-red-900 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all transform hover:scale-105 break-all"
                 >
                   mastermajidosse@gmail.com
                 </a>
                 
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-400 text-xs md:text-sm">
                   {t('emailResponse')}
                 </p>
               </div>
@@ -195,41 +195,41 @@ export function BookPage() {
       </section>
 
       {/* Custom Navigation Section */}
-      <section className="bg-black py-8 border-t border-amber-600/30">
+      <section className="bg-black py-6 md:py-8 border-t border-amber-600/30">
         <div className="container mx-auto px-4">
           <nav className="flex justify-center">
-            <div className="flex space-x-8 rtl:space-x-reverse">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
               <Link
                 to="/"
-                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2 text-sm md:text-base"
               >
                 <Globe className="w-4 h-4" />
                 {t('home')}
               </Link>
               <Link
                 to="/book"
-                className="flex items-center gap-2 text-amber-400 font-semibold px-2"
+                className="flex items-center gap-2 text-amber-400 font-semibold px-2 text-sm md:text-base"
               >
                 <ShoppingCart className="w-4 h-4" />
                 {t('book')}
               </Link>
               <Link
                 to="/groups"
-                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2 text-sm md:text-base"
               >
                 <MessageCircle className="w-4 h-4" />
                 {t('groups')}
               </Link>
               <Link
                 to="/march"
-                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2 text-sm md:text-base"
               >
                 <Megaphone className="w-4 h-4" />
                 {t('march')}
               </Link>
               <Link
                 to="/donations"
-                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2"
+                className="flex items-center gap-2 text-gray-300 hover:text-amber-400 font-semibold transition-colors px-2 text-sm md:text-base"
               >
                 <Heart className="w-4 h-4" />
                 {t('donations')}
