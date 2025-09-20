@@ -112,7 +112,7 @@ export function BookPage() {
             
             <div className="bg-black/60 p-8 rounded-lg border-2 border-amber-600/50 max-w-md mx-auto">
               <div className="mb-6">
-                <div className="text-3xl font-black text-white mb-2">10</div>
+                <div className="text-3xl font-black text-white mb-2">$10</div>
                 <div className="text-gray-400">{t('digitalEdition')}</div>
                 <div className="text-sm text-amber-400 mt-1">{t('physicalCopies')}</div>
               </div>
