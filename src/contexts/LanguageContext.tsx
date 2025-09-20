@@ -68,7 +68,7 @@ const translations = {
     
     // Buy Section
     getYourCopy: 'احصل على نسختك',
-    today: 'اليوم',
+    today: 'الآن',
     dontLetTruthHidden: 'لا تدع الحقيقة تبقى مخفية. سلح نفسك بالمعرفة التي يمكن أن تغير كل شيء.',
     digitalEdition: 'النسخة الرقمية متاحة الآن',
     physicalCopies: 'النسخ المطبوعة قريباً',
