@@ -38,7 +38,9 @@ export function HomePage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <div className="w-80 h-80 bg-gradient-to-br from-amber-600 via-red-800 to-black rounded-full shadow-2xl flex items-center justify-center">
-                  <Shield className="w-32 h-32 text-amber-400" />
+                  <svg className="w-32 h-32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <text x="50" y="70" fontSize="60" fontWeight="bold" textAnchor="middle" fill="#f59e0b" fontFamily="serif">A</text>
+                  </svg>
                 </div>
                 <div className="absolute -top-4 -right-4 bg-red-800 text-amber-200 px-4 py-2 rounded-full font-bold text-sm transform rotate-12">
                   {t('fightForFreedom')}

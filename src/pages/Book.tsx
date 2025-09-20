@@ -27,14 +27,15 @@ export function BookPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="#buy" 
-                  className="bg-green-800 hover:bg-green-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="bg-green-800 hover:bg-green-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
                 >
                   <ShoppingCart className="w-5 h-5" />
-                  {t('getTruthNow')}
+                  <span className="block sm:hidden">اقرأ الكتاب</span>
+                  <span className="hidden sm:block">{t('getTruthNow')}</span>
                 </a>
                 <a 
                   href="#about" 
-                  className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2"
+                  className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all flex items-center justify-center gap-2"
                 >
                   <Eye className="w-5 h-5" />
                   {t('learnMore')}
@@ -130,14 +131,6 @@ export function BookPage() {
                   Gumroad
                 </a>
                 
-                <a 
-                  href="https://www.instagram.com/atgaza"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-base md:text-lg transition-all border-2 border-gray-600 hover:border-amber-500"
-                >
-                  {t('freeBookRequest')}
-                </a>
               </div>
               
               <div className="mt-6 text-sm text-gray-400">
