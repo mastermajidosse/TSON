@@ -72,11 +72,11 @@ const translations = {
     dontLetTruthHidden: 'لا تدع الحقيقة مخفية. سلح نفسك بالمعرفة التي يمكن أن تغير كل شيء.',
     digitalEdition: 'النسخة الرقمية متاحة الآن',
     physicalCopies: 'النسخ المطبوعة قريباً',
-    payWithPaypal: 'ادفع بـ PayPal',
+    buyOnGumroad: 'اشتري من Gumroad',
     directPurchase: 'شراء مباشر',
     instantDownload: 'تحميل فوري',
-    moneyBackGuarantee: 'ضمان استرداد المال لمدة 30 يوماً',
-    warningMessage: '⚠️ تحذير: يحتوي هذا الكتاب على معلومات تتحدى الروايات السائدة',
+    securePayment: 'دفع آمن ومضمون',
+    warningMessage: '⚠️ يحتوي هذا الكتاب على معلومات تتحدى رواية الغرب',
     
     // Contact Section
     contactThe: 'تواصل مع',
@@ -241,11 +241,11 @@ const translations = {
     dontLetTruthHidden: 'Don\'t let the truth remain hidden. Arm yourself with knowledge that could change everything.',
     digitalEdition: 'Digital Edition Available Now',
     physicalCopies: 'Physical copies shipping soon',
-    payWithPaypal: 'Pay with PayPal',
+    buyOnGumroad: 'Buy on Gumroad',
     directPurchase: 'Direct Purchase',
     instantDownload: 'Instant Download',
-    moneyBackGuarantee: '30-Day Money Back Guarantee',
-    warningMessage: '⚠️ WARNING: This book contains information that challenges mainstream narratives',
+    securePayment: 'Secure & Safe Payment',
+    warningMessage: '⚠️ This book contains information that challenges Western narratives',
     
     // Contact Section
     contactThe: 'CONTACT THE',

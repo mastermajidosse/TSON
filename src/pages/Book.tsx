@@ -119,10 +119,10 @@ export function BookPage() {
               
               <div className="space-y-4">
                 <button className="w-full bg-red-800 hover:bg-red-900 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-3">
-                  <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">P</span>
+                  <div className="w-6 h-6 bg-pink-600 rounded flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">G</span>
                   </div>
-                  {t('payWithPaypal')}
+                  {t('buyOnGumroad')}
                 </button>
                 
                 <button className="w-full bg-gray-700 hover:bg-gray-600 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all border-2 border-gray-600 hover:border-amber-500">
@@ -137,7 +137,7 @@ export function BookPage() {
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span>{t('moneyBackGuarantee')}</span>
+                  <span>{t('securePayment')}</span>
                 </div>
               </div>
             </div>
@@ -169,10 +169,10 @@ export function BookPage() {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:author@scumofnations.com" 
+                  href="mailto:mastermajidosse@gmail.com" 
                   className="block bg-red-800 hover:bg-red-900 text-white py-4 px-6 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
                 >
-                  author@scumofnations.com
+                  mastermajidosse@gmail.com
                 </a>
                 
                 <p className="text-gray-400 text-sm">
