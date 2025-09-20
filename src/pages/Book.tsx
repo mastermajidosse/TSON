@@ -72,7 +72,7 @@ export function BookPage() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
               <div className="bg-gray-800/50 p-6 rounded-lg border border-amber-600/30 hover:border-amber-500/50 transition-all">
                 <Target className="w-12 h-12 text-amber-500 mb-4" />
-                <h4 className="text-xl font-bold text-white mb-3">من هو العدو الأكبر</h4>
+                <h4 className="text-xl font-bold text-white mb-3">من هو العدو</h4>
                 <p className="text-gray-400">من هو العدو الأكبر وكيف وما مقدار القوة التي يسيطر بها على العالم وما مكامن ضعفه</p>
               </div>
               
