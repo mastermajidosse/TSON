@@ -62,10 +62,15 @@ export function MarchPage() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+                <a 
+                  href="https://globalsumudflotilla.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                >
                   <Users className="w-5 h-5" />
                   {language === 'ar' ? 'شارك الآن' : 'GET INVOLVED'}
-                </button>
+                </a>
                 <button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg transition-all flex items-center justify-center gap-2">
                   <Heart className="w-5 h-5" />
                   {language === 'ar' ? 'تبرع' : 'DONATE'}
@@ -155,6 +160,75 @@ export function MarchPage() {
                   : 'Register your interest and we\'ll contact you with details'
                 }
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Share the News Section */}
+      <section className="py-12 md:py-20 bg-white text-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-3xl sm:text-4xl font-black mb-8 text-gray-900">
+              {language === 'ar' ? 'انشر الخبر' : 'SPREAD THE WORD'}
+            </h3>
+            
+            <p className="text-lg sm:text-xl text-gray-700 mb-12 leading-relaxed">
+              {language === 'ar' 
+                ? 'ساعدنا في نشر الوعي حول مهمة أسطول الصمود العالمي. شارك الخبر مع أصدقائك وعائلتك ومجتمعك. كل مشاركة تحدث فرقاً في كسر الصمت حول الحصار.'
+                : 'Help us raise awareness about the Global Sumud Flotilla mission. Share the news with your friends, family, and community. Every share makes a difference in breaking the silence about the siege.'
+              }
+            </p>
+            
+            <div className="bg-green-50 p-8 rounded-lg border-2 border-green-200">
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MessageCircle className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800 mb-2">
+                    {language === 'ar' ? 'شارك على وسائل التواصل' : 'Share on Social Media'}
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    {language === 'ar' ? 'انشر على فيسبوك، تويتر، إنستغرام' : 'Post on Facebook, Twitter, Instagram'}
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800 mb-2">
+                    {language === 'ar' ? 'أخبر أصدقائك' : 'Tell Your Friends'}
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    {language === 'ar' ? 'تحدث مع الأصدقاء والعائلة' : 'Talk to friends and family'}
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Megaphone className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-800 mb-2">
+                    {language === 'ar' ? 'نظم فعالية' : 'Organize an Event'}
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    {language === 'ar' ? 'اجمع مجتمعك المحلي' : 'Gather your local community'}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <a 
+                  href="https://globalsumudflotilla.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
+                >
+                  {language === 'ar' ? 'احصل على المواد الإعلامية' : 'Get Media Materials'}
+                </a>
+              </div>
             </div>
           </div>
         </div>
