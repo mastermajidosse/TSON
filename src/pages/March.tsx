@@ -90,7 +90,10 @@ export function MarchPage() {
     { name: 'Tunisia', flag: '🇹🇳', status: 'confirmed' },
     { name: 'Turkey', flag: '🇹🇷', status: 'confirmed' },
     { name: 'UK', flag: '🇬🇧', status: 'confirmed' },
-    { name: 'US', flag: '🇺🇸', status: 'confirmed' }
+    { name: 'US', flag: '🇺🇸', status: 'confirmed' },
+    { name: 'Malaysia', flag: '🇲🇾', status: 'confirmed' },
+    { name: 'Maldives', flag: '🇲🇻', status: 'confirmed' },
+    { name: 'Mexico', flag: '🇲🇽', status: 'confirmed' }
   ];
 
   const countriesToShow = language === 'ar' ? participatingCountries : participatingCountriesEn;
@@ -165,7 +168,7 @@ export function MarchPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">
-              {language === 'ar' ? 'الدول المشاركة' : 'Participating Countries'}
+              {language === 'ar' ? 'الدول المشاركة في المسيرة' : 'Participating Countries in the march'}
             </h3>
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
