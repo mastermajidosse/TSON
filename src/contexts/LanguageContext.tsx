@@ -89,7 +89,7 @@ const translations = {
     joinThe: 'انضم إلى',
     resistance: 'المقاومة',
     connectTruthSeekers: 'تواصل مع الباحثين عن الحقيقة في مجتمعات تليجرام',
-    secureAnonymous: 'آمن • مجهول • غير خاضع للرقابة',
+    secureAnonymous: 'انظم ، تفاعل ، ادعم بالفعل',
     members: 'عضو',
     joinGroup: 'انضم للمجموعة',
     securityNotice: 'إشعار أمني',
@@ -118,18 +118,14 @@ const translations = {
     allRightsReserved: 'جميع الحقوق محفوظة.',
     
     // Telegram Groups
-    truthSeekersUnited: 'متحدون في البحث عن الحقيقة',
-    truthSeekersDesc: 'مجموعة النقاش الرئيسية للقراء والباحثين عن الحقيقة',
-    scumReadersGroup: 'قراء حثالة الأمم',
-    scumReadersDesc: 'مجموعة حصرية لقراء الكتاب لمناقشة الكشوفات',
-    globalAwakening: 'الصحوة العالمية',
-    globalAwakeningDesc: 'مجتمع دولي لكشف المؤامرات العالمية',
-    warCrimesExposed: 'جرائم الحرب المكشوفة',
-    warCrimesDesc: 'توثيق وكشف جرائم الحرب في جميع أنحاء العالم',
-    shadowNetworksIntel: 'استخبارات الشبكات الخفية',
-    shadowNetworksIntelDesc: 'تبادل المعلومات الاستخباراتية حول هياكل السلطة الخفية',
-    resistanceNetwork: 'شبكة المقاومة',
-    resistanceNetworkDesc: 'تنظيم المقاومة السلمية ضد القمع',
+    toGazaGroup: 'الى غزة',
+    toGazaDesc: 'مجموعة لنشر الوعي والعمل لإنقاذ غزة - أي اقتراح مرحب به على صفحتنا',
+    breakSilenceGroup: 'كسر الصمت',
+    breakSilenceDesc: 'للحصول على المؤثرين للتحدث والعمل من أجل القضية',
+    ourNarrativeGroup: 'روايتنا',
+    ourNarrativeDesc: 'لقصتنا الخاصة ووجهة نظرنا الخاصة',
+    freedomFlotillaGroup: 'Freedom Flotilla',
+    freedomFlotillaDesc: 'Supporting the freedom flotilla mission to Gaza',
     
     // March Events
     globalDayOfTruth: 'اليوم العالمي للحقيقة',
@@ -287,18 +283,6 @@ const translations = {
     allRightsReserved: 'All rights reserved.',
     
     // Telegram Groups
-    truthSeekersUnited: 'Truth Seekers United',
-    truthSeekersDesc: 'Main discussion group for readers and truth seekers',
-    scumReadersGroup: 'حثالة الأمم Readers',
-    scumReadersDesc: 'Exclusive group for book readers to discuss revelations',
-    globalAwakening: 'Global Awakening',
-    globalAwakeningDesc: 'International community exposing global conspiracies',
-    warCrimesExposed: 'War Crimes Exposed',
-    warCrimesDesc: 'Documenting and exposing war crimes worldwide',
-    shadowNetworksIntel: 'Shadow Networks Intel',
-    shadowNetworksIntelDesc: 'Intelligence sharing about hidden power structures',
-    resistanceNetwork: 'Resistance Network',
-    resistanceNetworkDesc: 'Organizing peaceful resistance against oppression',
     
     // March Events
     globalDayOfTruth: 'Global Day of Truth',
