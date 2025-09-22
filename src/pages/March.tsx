@@ -8,6 +8,7 @@ export function MarchPage() {
   
   const participatingCountries = [
     { name: 'الجزائر', flag: '🇩🇿', status: 'confirmed' },
+    { name: 'أوتياروا/نيوزيلندا', flag: '🇳🇿', status: 'confirmed' },
     { name: 'أستراليا', flag: '🇦🇺', status: 'confirmed' },
     { name: 'النمسا', flag: '🇦🇹', status: 'confirmed' },
     { name: 'البحرين', flag: '🇧🇭', status: 'confirmed' },
@@ -21,13 +22,75 @@ export function MarchPage() {
     { name: 'فرنسا', flag: '🇫🇷', status: 'confirmed' },
     { name: 'ألمانيا', flag: '🇩🇪', status: 'confirmed' },
     { name: 'اليونان', flag: '🇬🇷', status: 'confirmed' },
-    { name: 'إندونيسيا', flag: '🇮🇩', status: 'confirmed' },
     { name: 'أيرلندا', flag: '🇮🇪', status: 'confirmed' },
+    { name: 'إندونيسيا', flag: '🇮🇩', status: 'confirmed' },
     { name: 'إيطاليا', flag: '🇮🇹', status: 'confirmed' },
     { name: 'الأردن', flag: '🇯🇴', status: 'confirmed' },
     { name: 'الكويت', flag: '🇰🇼', status: 'confirmed' },
-    { name: 'ليبيا', flag: '🇱🇾', status: 'confirmed' },
-    { name: 'لوكسمبورغ', flag: '🇱🇺', status: 'confirmed' },
+    { name: 'المغرب', flag: '🇲🇦', status: 'confirmed' },
+    { name: 'هولندا', flag: '🇳🇱', status: 'confirmed' },
+    { name: 'النرويج', flag: '🇳🇴', status: 'confirmed' },
+    { name: 'عُمان', flag: '🇴🇲', status: 'confirmed' },
+    { name: 'باكستان', flag: '🇵🇰', status: 'confirmed' },
+    { name: 'الفلبين', flag: '🇵🇭', status: 'confirmed' },
+    { name: 'بولندا', flag: '🇵🇱', status: 'confirmed' },
+    { name: 'قطر', flag: '🇶🇦', status: 'confirmed' },
+    { name: 'السعودية', flag: '🇸🇦', status: 'confirmed' },
+    { name: 'جنوب أفريقيا', flag: '🇿🇦', status: 'confirmed' },
+    { name: 'إسبانيا', flag: '🇪🇸', status: 'confirmed' },
+    { name: 'سريلانكا', flag: '🇱🇰', status: 'confirmed' },
+    { name: 'السويد', flag: '🇸🇪', status: 'confirmed' },
+    { name: 'سويسرا', flag: '🇨🇭', status: 'confirmed' },
+    { name: 'تايلاند', flag: '🇹🇭', status: 'confirmed' },
+    { name: 'تونس', flag: '🇹🇳', status: 'confirmed' },
+    { name: 'تركيا', flag: '🇹🇷', status: 'confirmed' },
+    { name: 'المملكة المتحدة', flag: '🇬🇧', status: 'confirmed' },
+    { name: 'الولايات المتحدة', flag: '🇺🇸', status: 'confirmed' }
+  ];
+
+  const participatingCountriesEn = [
+    { name: 'Algeria', flag: '🇩🇿', status: 'confirmed' },
+    { name: 'Aotearoa/New Zealand', flag: '🇳🇿', status: 'confirmed' },
+    { name: 'Australia', flag: '🇦🇺', status: 'confirmed' },
+    { name: 'Austria', flag: '🇦🇹', status: 'confirmed' },
+    { name: 'Bahrain', flag: '🇧🇭', status: 'confirmed' },
+    { name: 'Bangladesh', flag: '🇧🇩', status: 'confirmed' },
+    { name: 'Belgium', flag: '🇧🇪', status: 'confirmed' },
+    { name: 'Brazil', flag: '🇧🇷', status: 'confirmed' },
+    { name: 'Colombia', flag: '🇨🇴', status: 'confirmed' },
+    { name: 'Cyprus', flag: '🇨🇾', status: 'confirmed' },
+    { name: 'Denmark', flag: '🇩🇰', status: 'confirmed' },
+    { name: 'Finland', flag: '🇫🇮', status: 'confirmed' },
+    { name: 'France', flag: '🇫🇷', status: 'confirmed' },
+    { name: 'Germany', flag: '🇩🇪', status: 'confirmed' },
+    { name: 'Greece', flag: '🇬🇷', status: 'confirmed' },
+    { name: 'Ireland', flag: '🇮🇪', status: 'confirmed' },
+    { name: 'Indonesia', flag: '🇮🇩', status: 'confirmed' },
+    { name: 'Italy', flag: '🇮🇹', status: 'confirmed' },
+    { name: 'Jordan', flag: '🇯🇴', status: 'confirmed' },
+    { name: 'Kuwait', flag: '🇰🇼', status: 'confirmed' },
+    { name: 'Morocco', flag: '🇲🇦', status: 'confirmed' },
+    { name: 'Netherlands', flag: '🇳🇱', status: 'confirmed' },
+    { name: 'Norway', flag: '🇳🇴', status: 'confirmed' },
+    { name: 'Oman', flag: '🇴🇲', status: 'confirmed' },
+    { name: 'Pakistan', flag: '🇵🇰', status: 'confirmed' },
+    { name: 'Philippines', flag: '🇵🇭', status: 'confirmed' },
+    { name: 'Poland', flag: '🇵🇱', status: 'confirmed' },
+    { name: 'Qatar', flag: '🇶🇦', status: 'confirmed' },
+    { name: 'Saudi Arabia', flag: '🇸🇦', status: 'confirmed' },
+    { name: 'South Africa', flag: '🇿🇦', status: 'confirmed' },
+    { name: 'Spain', flag: '🇪🇸', status: 'confirmed' },
+    { name: 'Sri Lanka', flag: '🇱🇰', status: 'confirmed' },
+    { name: 'Sweden', flag: '🇸🇪', status: 'confirmed' },
+    { name: 'Switzerland', flag: '🇨🇭', status: 'confirmed' },
+    { name: 'Thailand', flag: '🇹🇭', status: 'confirmed' },
+    { name: 'Tunisia', flag: '🇹🇳', status: 'confirmed' },
+    { name: 'Turkey', flag: '🇹🇷', status: 'confirmed' },
+    { name: 'UK', flag: '🇬🇧', status: 'confirmed' },
+    { name: 'US', flag: '🇺🇸', status: 'confirmed' }
+  ];
+
+  const countriesToShow = language === 'ar' ? participatingCountries : participatingCountriesEn;
     { name: 'ماليزيا', flag: '🇲🇾', status: 'confirmed' },
     { name: 'المالديف', flag: '🇲🇻', status: 'confirmed' },
     { name: 'المكسيك', flag: '🇲🇽', status: 'confirmed' },
@@ -115,11 +178,11 @@ export function MarchPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">
-              {language === 'ar' ? 'الدول المشاركة' : 'Participating Countries'}
+              {language === 'ar' ? 'الدول المشاركة في المسيرة' : 'Participating Countries in the march'}
             </h3>
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {participatingCountries.map((country, index) => (
+              {countriesToShow.map((country, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-200 hover:border-green-500/50 transition-all text-center">
                   <div className="text-3xl mb-2">{country.flag}</div>
                   <h4 className="text-sm font-semibold text-gray-800 mb-1">{country.name}</h4>
