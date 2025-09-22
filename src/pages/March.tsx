@@ -45,7 +45,10 @@ export function MarchPage() {
     { name: 'تونس', flag: '🇹🇳', status: 'confirmed' },
     { name: 'تركيا', flag: '🇹🇷', status: 'confirmed' },
     { name: 'المملكة المتحدة', flag: '🇬🇧', status: 'confirmed' },
-    { name: 'الولايات المتحدة', flag: '🇺🇸', status: 'confirmed' }
+    { name: 'الولايات المتحدة', flag: '🇺🇸', status: 'confirmed' },
+    { name: 'ماليزيا', flag: '🇲🇾', status: 'confirmed' },
+    { name: 'المالديف', flag: '🇲🇻', status: 'confirmed' },
+    { name: 'المكسيك', flag: '🇲🇽', status: 'confirmed' }
   ];
 
   const participatingCountriesEn = [
@@ -91,22 +94,6 @@ export function MarchPage() {
   ];
 
   const countriesToShow = language === 'ar' ? participatingCountries : participatingCountriesEn;
-    { name: 'ماليزيا', flag: '🇲🇾', status: 'confirmed' },
-    { name: 'المالديف', flag: '🇲🇻', status: 'confirmed' },
-    { name: 'المكسيك', flag: '🇲🇽', status: 'confirmed' },
-    { name: 'باكستان', flag: '🇵🇰', status: 'confirmed' },
-    { name: 'الفلبين', flag: '🇵🇭', status: 'confirmed' },
-    { name: 'جنوب أفريقيا', flag: '🇿🇦', status: 'confirmed' },
-    { name: 'إسبانيا', flag: '🇪🇸', status: 'confirmed' },
-    { name: 'سريلانكا', flag: '🇱🇰', status: 'confirmed' },
-    { name: 'السويد', flag: '🇸🇪', status: 'confirmed' },
-    { name: 'سويسرا', flag: '🇨🇭', status: 'confirmed' },
-    { name: 'تايلاند', flag: '🇹🇭', status: 'confirmed' },
-    { name: 'تونس', flag: '🇹🇳', status: 'confirmed' },
-    { name: 'تركيا', flag: '🇹🇷', status: 'confirmed' },
-    { name: 'المملكة المتحدة', flag: '🇬🇧', status: 'confirmed' },
-    { name: 'الولايات المتحدة', flag: '🇺🇸', status: 'confirmed' }
-  ];
 
   return (
     <>
@@ -178,7 +165,7 @@ export function MarchPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">
-              {language === 'ar' ? 'الدول المشاركة في المسيرة' : 'Participating Countries in the march'}
+              {language === 'ar' ? 'الدول المشاركة' : 'Participating Countries'}
             </h3>
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
