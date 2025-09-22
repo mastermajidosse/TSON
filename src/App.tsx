@@ -13,10 +13,11 @@ import { DonationsPage } from './pages/Donations';
 function AppContent() {
   const location = useLocation();
   const isBookPage = location.pathname === '/book';
+  const isMarchPage = location.pathname === '/march';
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {!isBookPage && <Navigation />}
+      {!isBookPage && !isMarchPage && <Navigation />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/book" element={<BookPage />} />

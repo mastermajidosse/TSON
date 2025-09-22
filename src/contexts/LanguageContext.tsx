@@ -7,7 +7,7 @@ const translations = {
     home: 'الرئيسية',
     book: 'الكتاب',
     groups: 'المجموعات',
-    march: 'المسيرات',
+    march: 'الى غزة',
     donations: 'دعم',
     
     // Site Name
@@ -177,7 +177,7 @@ const translations = {
     home: 'Home',
     book: 'Book',
     groups: 'Groups',
-    march: 'March',
+    march: 'To Gaza',
     
     // Site Name
     siteName: 'ALJAMAE',
