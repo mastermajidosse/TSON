@@ -184,7 +184,7 @@ const translations = {
     transparentDevelopment: 'تطوير شفاف مع كود مفتوح المصدر',
     regularUpdates: 'تحديثات منتظمة عن تقدم التطوير',
     openSource: 'جميع المشاريع مفتوحة المصدر ومجانية',
-    techAppeal: '💻 ساعدنا في بناء مستقبل تقني حر ومستقل عن عمالقة التكنولوجيا'
+    techAppeal: '💻 ساعدنا في بناء مستقبل تقني حر ومستقل عن عمالقة التكنولوجيا',
     
     // Amazon Alternatives
     amazonAlternatives: 'بدائل أمازون',
@@ -389,7 +389,7 @@ const translations = {
     transparentDevelopment: 'Transparent development with open source code',
     regularUpdates: 'Regular updates on development progress',
     openSource: 'All projects are open source and free',
-    techAppeal: '💻 Help us build a free and independent tech future away from big tech giants'
+    techAppeal: '💻 Help us build a free and independent tech future away from big tech giants',
     
     // Amazon Alternatives
     amazonAlternatives: 'Amazon Alternatives',
