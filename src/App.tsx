@@ -14,10 +14,11 @@ function AppContent() {
   const location = useLocation();
   const isBookPage = location.pathname === '/book';
   const isMarchPage = location.pathname === '/march';
+  const isDonationsPage = location.pathname === '/donations';
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {!isBookPage && !isMarchPage && <Navigation />}
+      {!isBookPage && !isMarchPage && !isDonationsPage && <Navigation />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/book" element={<BookPage />} />
