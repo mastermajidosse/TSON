@@ -1,10 +1,22 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid, Clipboard, MessageSquare, Instagram, Facebook } from 'lucide-react';
+import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid, Clipboard, MessageSquare, Instagram, Facebook, Monitor, Github, Smartphone, Laptop, Headphones, ShoppingBag } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function DonationsPage() {
   const { t } = useContext(LanguageContext);
+  
+  const amazonAlternatives = [
+    {
+      title: t('globalMarketplace'),
+      description: t('globalMarketplaceDesc'),
+      icon: ShoppingBag,
+      goal: '$500,000',
+      raised: '$12,500',
+      link: 'https://gofundme.com/global-marketplace',
+      isOngoing: true
+    }
+  ];
   
   const googleAlternatives = [
     {
@@ -14,6 +26,7 @@ export function DonationsPage() {
       goal: '$50,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-chrome',
+      isOngoing: false
     },
     {
       title: t('replaceMaps'),
@@ -22,6 +35,7 @@ export function DonationsPage() {
       goal: '$75,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-maps',
+      isOngoing: false
     },
     {
       title: t('replaceSheets'),
@@ -30,6 +44,7 @@ export function DonationsPage() {
       goal: '$40,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-sheets',
+      isOngoing: false
     },
     {
       title: t('replaceDocs'),
@@ -38,6 +53,7 @@ export function DonationsPage() {
       goal: '$45,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-docs',
+      isOngoing: false
     },
     {
       title: t('replaceSlides'),
@@ -46,6 +62,7 @@ export function DonationsPage() {
       goal: '$35,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-slides',
+      isOngoing: false
     },
     {
       title: t('replaceGemini'),
@@ -54,6 +71,7 @@ export function DonationsPage() {
       goal: '$100,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-gemini',
+      isOngoing: false
     },
     {
       title: t('replaceGmail'),
@@ -62,6 +80,7 @@ export function DonationsPage() {
       goal: '$60,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-gmail',
+      isOngoing: false
     },
     {
       title: t('replaceCalendar'),
@@ -70,6 +89,7 @@ export function DonationsPage() {
       goal: '$30,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-calendar',
+      isOngoing: false
     },
     {
       title: t('replaceMeet'),
@@ -78,6 +98,7 @@ export function DonationsPage() {
       goal: '$55,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-meet',
+      isOngoing: false
     },
     {
       title: t('replaceNotes'),
@@ -86,6 +107,7 @@ export function DonationsPage() {
       goal: '$25,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-notes',
+      isOngoing: false
     },
     {
       title: t('replaceForms'),
@@ -94,6 +116,7 @@ export function DonationsPage() {
       goal: '$35,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-forms',
+      isOngoing: false
     }
   ];
 
@@ -105,6 +128,7 @@ export function DonationsPage() {
       goal: '$80,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-whatsapp',
+      isOngoing: false
     },
     {
       title: t('replaceInstagram'),
@@ -113,6 +137,7 @@ export function DonationsPage() {
       goal: '$90,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-instagram',
+      isOngoing: false
     },
     {
       title: t('replaceFacebook'),
@@ -121,6 +146,76 @@ export function DonationsPage() {
       goal: '$120,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-facebook',
+      isOngoing: false
+    }
+  ];
+
+  const microsoftAlternatives = [
+    {
+      title: t('replaceWindows'),
+      description: t('replaceWindowsDesc'),
+      icon: Monitor,
+      goal: '$200,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-windows',
+      isOngoing: false
+    },
+    {
+      title: t('replaceGithub'),
+      description: t('replaceGithubDesc'),
+      icon: Github,
+      goal: '$150,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-github',
+      isOngoing: false
+    },
+    {
+      title: t('replaceChatGPT'),
+      description: t('replaceChatGPTDesc'),
+      icon: Bot,
+      goal: '$300,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-chatgpt',
+      isOngoing: false
+    },
+    {
+      title: t('replaceDallE'),
+      description: t('replaceDallEDesc'),
+      icon: Bot,
+      goal: '$250,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-dalle',
+      isOngoing: false
+    }
+  ];
+
+  const appleAlternatives = [
+    {
+      title: t('replaceIPhone'),
+      description: t('replaceIPhoneDesc'),
+      icon: Smartphone,
+      goal: '$1,000,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-iphone',
+      isOngoing: false
+    },
+    {
+      title: t('replaceMac'),
+      description: t('replaceMacDesc'),
+      icon: Laptop,
+      goal: '$800,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-mac',
+      isOngoing: false
+    },
+    {
+      title: t('replaceHeadphones'),
+      description: t('replaceHeadphonesDesc'),
+      icon: Headphones,
+      goal: '$100,000',
+      raised: '$0',
+      link: 'https://gofundme.com/replace-headphones',
+      isOngoing: false
     }
   ];
 
