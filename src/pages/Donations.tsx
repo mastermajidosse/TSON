@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid, Clipboard, MessageSquare, Instagram, Facebook, Monitor, Github, Smartphone, Laptop, Headphones, ShoppingBag } from 'lucide-react';
+import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid, Clipboard, MessageSquare, Instagram, Facebook } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function DonationsPage() {
@@ -8,16 +8,16 @@ export function DonationsPage() {
   
   const amazonAlternatives = [
     {
-      title: t('globalMarketplace'),
-      description: t('globalMarketplaceDesc'),
-      icon: ShoppingBag,
-      goal: '$500,000',
+      title: t('replaceAmazon'),
+      description: t('replaceAmazonDesc'),
+      icon: ShoppingCart,
+      goal: '$150,000',
       raised: '$12,500',
-      link: 'https://gofundme.com/global-marketplace',
+      link: 'https://gofundme.com/replace-amazon',
       isOngoing: true
     }
   ];
-  
+
   const googleAlternatives = [
     {
       title: t('replaceChrome'),
@@ -26,7 +26,6 @@ export function DonationsPage() {
       goal: '$50,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-chrome',
-      isOngoing: false
     },
     {
       title: t('replaceMaps'),
@@ -35,7 +34,6 @@ export function DonationsPage() {
       goal: '$75,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-maps',
-      isOngoing: false
     },
     {
       title: t('replaceSheets'),
@@ -44,7 +42,6 @@ export function DonationsPage() {
       goal: '$40,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-sheets',
-      isOngoing: false
     },
     {
       title: t('replaceDocs'),
@@ -53,7 +50,6 @@ export function DonationsPage() {
       goal: '$45,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-docs',
-      isOngoing: false
     },
     {
       title: t('replaceSlides'),
@@ -62,7 +58,6 @@ export function DonationsPage() {
       goal: '$35,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-slides',
-      isOngoing: false
     },
     {
       title: t('replaceGemini'),
@@ -71,7 +66,6 @@ export function DonationsPage() {
       goal: '$100,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-gemini',
-      isOngoing: false
     },
     {
       title: t('replaceGmail'),
@@ -80,7 +74,6 @@ export function DonationsPage() {
       goal: '$60,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-gmail',
-      isOngoing: false
     },
     {
       title: t('replaceCalendar'),
@@ -89,7 +82,6 @@ export function DonationsPage() {
       goal: '$30,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-calendar',
-      isOngoing: false
     },
     {
       title: t('replaceMeet'),
@@ -98,7 +90,6 @@ export function DonationsPage() {
       goal: '$55,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-meet',
-      isOngoing: false
     },
     {
       title: t('replaceNotes'),
@@ -107,7 +98,6 @@ export function DonationsPage() {
       goal: '$25,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-notes',
-      isOngoing: false
     },
     {
       title: t('replaceForms'),
@@ -116,7 +106,6 @@ export function DonationsPage() {
       goal: '$35,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-forms',
-      isOngoing: false
     }
   ];
 
@@ -128,7 +117,6 @@ export function DonationsPage() {
       goal: '$80,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-whatsapp',
-      isOngoing: false
     },
     {
       title: t('replaceInstagram'),
@@ -137,7 +125,6 @@ export function DonationsPage() {
       goal: '$90,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-instagram',
-      isOngoing: false
     },
     {
       title: t('replaceFacebook'),
@@ -146,7 +133,6 @@ export function DonationsPage() {
       goal: '$120,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-facebook',
-      isOngoing: false
     }
   ];
 
@@ -154,68 +140,53 @@ export function DonationsPage() {
     {
       title: t('replaceWindows'),
       description: t('replaceWindowsDesc'),
-      icon: Monitor,
+      icon: Chrome,
       goal: '$200,000',
       raised: '$0',
       link: 'https://gofundme.com/replace-windows',
-      isOngoing: false
     },
     {
-      title: t('replaceGithub'),
-      description: t('replaceGithubDesc'),
-      icon: Github,
+      title: t('replaceOffice'),
+      description: t('replaceOfficeDesc'),
+      icon: FileText,
       goal: '$150,000',
       raised: '$0',
-      link: 'https://gofundme.com/replace-github',
-      isOngoing: false
+      link: 'https://gofundme.com/replace-office',
     },
     {
-      title: t('replaceChatGPT'),
-      description: t('replaceChatGPTDesc'),
-      icon: Bot,
-      goal: '$300,000',
+      title: t('replaceTeams'),
+      description: t('replaceTeamsDesc'),
+      icon: MessageSquare,
+      goal: '$80,000',
       raised: '$0',
-      link: 'https://gofundme.com/replace-chatgpt',
-      isOngoing: false
-    },
-    {
-      title: t('replaceDallE'),
-      description: t('replaceDallEDesc'),
-      icon: Bot,
-      goal: '$250,000',
-      raised: '$0',
-      link: 'https://gofundme.com/replace-dalle',
-      isOngoing: false
+      link: 'https://gofundme.com/replace-teams',
     }
   ];
 
   const appleAlternatives = [
     {
-      title: t('replaceIPhone'),
-      description: t('replaceIPhoneDesc'),
-      icon: Smartphone,
-      goal: '$1,000,000',
+      title: t('replaceiOS'),
+      description: t('replaceiOSDesc'),
+      icon: Chrome,
+      goal: '$300,000',
       raised: '$0',
-      link: 'https://gofundme.com/replace-iphone',
-      isOngoing: false
+      link: 'https://gofundme.com/replace-ios',
     },
     {
-      title: t('replaceMac'),
-      description: t('replaceMacDesc'),
-      icon: Laptop,
-      goal: '$800,000',
+      title: t('replacemacOS'),
+      description: t('replacemacOSDesc'),
+      icon: Chrome,
+      goal: '$250,000',
       raised: '$0',
-      link: 'https://gofundme.com/replace-mac',
-      isOngoing: false
+      link: 'https://gofundme.com/replace-macos',
     },
     {
-      title: t('replaceHeadphones'),
-      description: t('replaceHeadphonesDesc'),
-      icon: Headphones,
-      goal: '$100,000',
+      title: t('replaceSafari'),
+      description: t('replaceSafariDesc'),
+      icon: Chrome,
+      goal: '$60,000',
       raised: '$0',
-      link: 'https://gofundme.com/replace-headphones',
-      isOngoing: false
+      link: 'https://gofundme.com/replace-safari',
     }
   ];
 
@@ -239,6 +210,78 @@ export function DonationsPage() {
         </div>
       </section>
 
+      {/* Amazon Alternatives Section */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+              {t('amazonAlternatives')}
+            </h2>
+            
+            <div className="max-w-md mx-auto mb-12">
+              {amazonAlternatives.map((project, index) => {
+                const Icon = project.icon;
+                const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
+                const goalAmount = parseInt(project.goal.replace(/[$,]/g, ''));
+                const progressPercentage = Math.round((raisedAmount / goalAmount) * 100);
+                
+                return (
+                  <a
+                    key={index}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-orange-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
+                  >
+                    {/* Ongoing Badge */}
+                    <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                      {t('ongoing')}
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Icon className="w-8 h-8 text-orange-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors">
+                        {project.title}
+                      </h3>
+                    </div>
+                    
+                    <p className="text-gray-600 mb-6 leading-relaxed text-center text-sm">
+                      {project.description}
+                    </p>
+                    
+                    {/* Progress Bar */}
+                    <div className="mb-4">
+                      <div className="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>{t('raised')}: {project.raised}</span>
+                        <span>{t('goal')}: {project.goal}</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-orange-600 h-2 rounded-full transition-all duration-300"
+                          style={{ width: `${progressPercentage}%` }}
+                        ></div>
+                      </div>
+                      <div className="text-center mt-2">
+                        <span className="text-sm font-bold text-orange-600">{progressPercentage}% {t('funded')}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <span className="text-orange-600 font-bold text-sm">{t('donateNow')}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300"></div>
+
       {/* Google Alternatives Section */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -250,7 +293,9 @@ export function DonationsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {googleAlternatives.map((project, index) => {
                 const Icon = project.icon;
-                const progressPercentage = 0; // All start at $0
+                const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
+                const goalAmount = parseInt(project.goal.replace(/[$,]/g, ''));
+                const progressPercentage = Math.round((raisedAmount / goalAmount) * 100);
                 
                 return (
                   <a
@@ -258,8 +303,14 @@ export function DonationsPage() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all transform hover:scale-105 group"
+                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
                   >
+                    {/* Not Yet Badge */}
+                    {!project.isOngoing && (
+                      <div className="absolute top-3 right-3 bg-gray-400 text-white px-2 py-1 rounded-full text-xs font-bold">
+                        {t('notYet')}
+                      </div>
+                    )}
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-8 h-8 text-blue-600" />
@@ -315,7 +366,9 @@ export function DonationsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {metaAlternatives.map((project, index) => {
                 const Icon = project.icon;
-                const progressPercentage = 0; // All start at $0
+                const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
+                const goalAmount = parseInt(project.goal.replace(/[$,]/g, ''));
+                const progressPercentage = Math.round((raisedAmount / goalAmount) * 100);
                 
                 return (
                   <a
@@ -323,8 +376,14 @@ export function DonationsPage() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-purple-500 hover:shadow-lg transition-all transform hover:scale-105 group"
+                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-purple-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
                   >
+                    {/* Not Yet Badge */}
+                    {!project.isOngoing && (
+                      <div className="absolute top-3 right-3 bg-gray-400 text-white px-2 py-1 rounded-full text-xs font-bold">
+                        {t('notYet')}
+                      </div>
+                    )}
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-8 h-8 text-purple-600" />
@@ -365,6 +424,155 @@ export function DonationsPage() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300"></div>
+
+      {/* Microsoft Alternatives Section */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+              {t('microsoftAlternatives')}
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {microsoftAlternatives.map((project, index) => {
+                const Icon = project.icon;
+                const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
+                const goalAmount = parseInt(project.goal.replace(/[$,]/g, ''));
+                const progressPercentage = Math.round((raisedAmount / goalAmount) * 100);
+                
+                return (
+                  <a
+                    key={index}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
+                  >
+                    {/* Not Yet Badge */}
+                    {!project.isOngoing && (
+                      <div className="absolute top-3 right-3 bg-gray-400 text-white px-2 py-1 rounded-full text-xs font-bold">
+                        {t('notYet')}
+                      </div>
+                    )}
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Icon className="w-8 h-8 text-indigo-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">
+                        {project.title}
+                      </h3>
+                    </div>
+                    
+                    <p className="text-gray-600 mb-6 leading-relaxed text-center text-sm">
+                      {project.description}
+                    </p>
+                    
+                    {/* Progress Bar */}
+                    <div className="mb-4">
+                      <div className="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>{t('raised')}: {project.raised}</span>
+                        <span>{t('goal')}: {project.goal}</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
+                          style={{ width: `${progressPercentage}%` }}
+                        ></div>
+                      </div>
+                      <div className="text-center mt-2">
+                        <span className="text-sm font-bold text-indigo-600">{progressPercentage}% {t('funded')}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <span className="text-indigo-600 font-bold text-sm">{t('donateNow')}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300"></div>
+
+      {/* Apple Alternatives Section */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+              {t('appleAlternatives')}
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {appleAlternatives.map((project, index) => {
+                const Icon = project.icon;
+                const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
+                const goalAmount = parseInt(project.goal.replace(/[$,]/g, ''));
+                const progressPercentage = Math.round((raisedAmount / goalAmount) * 100);
+                
+                return (
+                  <a
+                    key={index}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
+                  >
+                    {/* Not Yet Badge */}
+                    {!project.isOngoing && (
+                      <div className="absolute top-3 right-3 bg-gray-400 text-white px-2 py-1 rounded-full text-xs font-bold">
+                        {t('notYet')}
+                      </div>
+                    )}
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Icon className="w-8 h-8 text-gray-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-gray-600 transition-colors">
+                        {project.title}
+                      </h3>
+                    </div>
+                    
+                    <p className="text-gray-600 mb-6 leading-relaxed text-center text-sm">
+                      {project.description}
+                    </p>
+                    
+                    {/* Progress Bar */}
+                    <div className="mb-4">
+                      <div className="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>{t('raised')}: {project.raised}</span>
+                        <span>{t('goal')}: {project.goal}</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-gray-600 h-2 rounded-full transition-all duration-300"
+                          style={{ width: `${progressPercentage}%` }}
+                        ></div>
+                      </div>
+                      <div className="text-center mt-2">
+                        <span className="text-sm font-bold text-gray-600">{progressPercentage}% {t('funded')}</span>
+                      </div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <span className="text-gray-600 font-bold text-sm">{t('donateNow')}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300"></div>
 
       {/* Important Notice */}
       <section className="py-12 md:py-20 bg-gray-50">
