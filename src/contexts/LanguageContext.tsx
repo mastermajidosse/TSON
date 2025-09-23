@@ -185,6 +185,36 @@ const translations = {
     regularUpdates: 'تحديثات منتظمة عن تقدم التطوير',
     openSource: 'جميع المشاريع مفتوحة المصدر ومجانية',
     techAppeal: '💻 ساعدنا في بناء مستقبل تقني حر ومستقل عن عمالقة التكنولوجيا'
+    
+    // Amazon Alternatives
+    amazonAlternatives: 'بدائل أمازون',
+    globalMarketplace: 'معمورة',
+    globalMarketplaceEn: 'Global Marketplace',
+    globalMarketplaceDesc: 'منصة تجارة عالمية حرة ومستقلة تدعم التجار المحليين وتحمي بيانات المستخدمين',
+    
+    // Microsoft Alternatives
+    microsoftAlternatives: 'بدائل مايكروسوفت',
+    replaceWindows: 'استبدال Windows',
+    replaceWindowsDesc: 'نظام تشغيل حر ومفتوح المصدر',
+    replaceGithub: 'استبدال GitHub',
+    replaceGithubDesc: 'منصة تطوير مستقلة للمطورين',
+    replaceChatGPT: 'استبدال ChatGPT',
+    replaceChatGPTDesc: 'ذكاء اصطناعي حر وشفاف',
+    replaceDallE: 'استبدال DALL-E',
+    replaceDallEDesc: 'مولد صور بالذكاء الاصطناعي مفتوح المصدر',
+    
+    // Apple Alternatives
+    appleAlternatives: 'بدائل آبل',
+    replaceIPhone: 'استبدال iPhone',
+    replaceIPhoneDesc: 'هاتف ذكي يحترم خصوصيتك',
+    replaceMac: 'استبدال Mac',
+    replaceMacDesc: 'حاسوب محمول مفتوح المصدر',
+    replaceHeadphones: 'استبدال AirPods',
+    replaceHeadphonesDesc: 'سماعات لاسلكية مستقلة',
+    
+    // Status badges
+    notYet: 'ليس بعد',
+    ongoing: 'جاري العمل'
   },
   en: {
     // Navigation
@@ -360,6 +390,36 @@ const translations = {
     regularUpdates: 'Regular updates on development progress',
     openSource: 'All projects are open source and free',
     techAppeal: '💻 Help us build a free and independent tech future away from big tech giants'
+    
+    // Amazon Alternatives
+    amazonAlternatives: 'Amazon Alternatives',
+    globalMarketplace: 'Global Marketplace',
+    globalMarketplaceEn: 'Global Marketplace',
+    globalMarketplaceDesc: 'Free and independent global commerce platform supporting local merchants and protecting user data',
+    
+    // Microsoft Alternatives
+    microsoftAlternatives: 'Microsoft Alternatives',
+    replaceWindows: 'Replace Windows',
+    replaceWindowsDesc: 'Free and open-source operating system',
+    replaceGithub: 'Replace GitHub',
+    replaceGithubDesc: 'Independent development platform for developers',
+    replaceChatGPT: 'Replace ChatGPT',
+    replaceChatGPTDesc: 'Free and transparent artificial intelligence',
+    replaceDallE: 'Replace DALL-E',
+    replaceDallEDesc: 'Open-source AI image generator',
+    
+    // Apple Alternatives
+    appleAlternatives: 'Apple Alternatives',
+    replaceIPhone: 'Replace iPhone',
+    replaceIPhoneDesc: 'Smartphone that respects your privacy',
+    replaceMac: 'Replace Mac',
+    replaceMacDesc: 'Open-source laptop computer',
+    replaceHeadphones: 'Replace AirPods',
+    replaceHeadphonesDesc: 'Independent wireless headphones',
+    
+    // Status badges
+    notYet: 'Not Yet',
+    ongoing: 'Ongoing'
   }
 };
 
