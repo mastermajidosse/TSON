@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid, Clipboard, MessageSquare, Instagram, Facebook } from 'lucide-react';
+import { Heart, Globe, MessageCircle, Megaphone, ShoppingCart, Chrome, Mail, Calendar, FileText, Presentation, Bot, MapPin, Grid2x2 as Grid, Clipboard, MessageSquare, Instagram, Facebook } from 'lucide-react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 export function TechDonationsPage() {
