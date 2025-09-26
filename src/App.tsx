@@ -9,22 +9,25 @@ import { BookPage } from './pages/Book';
 import { GroupsPage } from './pages/Groups';
 import { MarchPage } from './pages/March';
 import { DonationsPage } from './pages/Donations';
+import { TechDonationsPage } from './pages/TechDonations';
 
 function AppContent() {
   const location = useLocation();
   const isBookPage = location.pathname === '/book';
   const isMarchPage = location.pathname === '/march';
   const isDonationsPage = location.pathname === '/donations';
+  const isTechDonationsPage = location.pathname === '/tech-donations';
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {!isBookPage && !isMarchPage && !isDonationsPage && <Navigation />}
+      {!isBookPage && !isMarchPage && !isDonationsPage && !isTechDonationsPage && <Navigation />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/book" element={<BookPage />} />
         <Route path="/groups" element={<GroupsPage />} />
         <Route path="/march" element={<MarchPage />} />
         <Route path="/donations" element={<DonationsPage />} />
+        <Route path="/tech-donations" element={<TechDonationsPage />} />
       </Routes>
       <Footer />
     </div>
