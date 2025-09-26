@@ -213,12 +213,12 @@ export function TechDonationsPage() {
       {/* Amazon Alternatives Section */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
               {t('amazonAlternatives')}
             </h2>
             
-            <div className="max-w-md mx-auto mb-12">
+            <div className="mb-12">
               {amazonAlternatives.map((project, index) => {
                 const Icon = project.icon;
                 const raisedAmount = parseInt(project.raised.replace(/[$,]/g, ''));
@@ -231,7 +231,7 @@ export function TechDonationsPage() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-orange-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
+                    className="block bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-orange-500 hover:shadow-lg transition-all transform hover:scale-105 group relative"
                   >
                     {/* Ongoing Badge */}
                     <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
