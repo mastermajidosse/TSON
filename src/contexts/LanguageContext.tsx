@@ -139,10 +139,18 @@ const translations = {
     mediaHeadquarters: 'مقرات الإعلام حول العالم',
     
     // Donations Page
-    supportTechStartups: 'دعم البدائل التقنية',
+    urgentSupport: 'دعم عاجل',
     campaigns: 'المشاريع',
-    helpBuildAlternatives: 'ساعد في بناء بدائل تقنية حرة ومستقلة عن عمالقة التكنولوجيا',
+    helpPeopleInNeed: 'ساعد في دعم الأشخاص المحتاجين والمتضررين حول العالم',
     everyDonationCounts: 'كل تبرع يحدث فرقاً',
+    
+    // Donation Platforms
+    ummatyFoundation: 'مؤسسة أمتي',
+    ummatyDesc: 'مؤسسة خيرية تدعم الأسر المحتاجة في غزة وتوفر المساعدات الإنسانية',
+    chuffedPlatform: 'منصة Chuffed',
+    chuffedDesc: 'منصة تبرعات عالمية تدعم القضايا الإنسانية في فلسطين',
+    gofundmePlatform: 'منصة GoFundMe',
+    gofundmeDesc: 'حملات تبرع متنوعة لدعم غزة والقضايا الإنسانية',
     googleAlternatives: 'بدائل جوجل',
     metaAlternatives: 'بدائل ميتا',
     replaceChrome: 'استبدال Chrome',
@@ -344,10 +352,18 @@ const translations = {
     mediaHeadquarters: 'Media Headquarters Worldwide',
     
     // Donations Page
-    supportTechStartups: 'Support Tech Alternatives',
+    urgentSupport: 'Urgent Support',
     campaigns: 'Projects',
-    helpBuildAlternatives: 'Help build free and independent tech alternatives to big tech giants',
+    helpPeopleInNeed: 'Help support people in need and those affected around the world',
     everyDonationCounts: 'Every donation makes a difference',
+    
+    // Donation Platforms
+    ummatyFoundation: 'UMMATY Foundation',
+    ummatyDesc: 'Charitable foundation supporting families in need in Gaza and providing humanitarian aid',
+    chuffedPlatform: 'Chuffed Platform',
+    chuffedDesc: 'Global donation platform supporting humanitarian causes in Palestine',
+    gofundmePlatform: 'GoFundMe Platform',
+    gofundmeDesc: 'Various donation campaigns to support Gaza and humanitarian causes',
     googleAlternatives: 'Google Alternatives',
     metaAlternatives: 'Meta Alternatives',
     replaceChrome: 'Replace Chrome',
