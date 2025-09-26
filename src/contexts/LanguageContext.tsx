@@ -194,6 +194,10 @@ const translations = {
     openSource: 'جميع المشاريع مفتوحة المصدر ومجانية',
     techAppeal: '💻 ساعدنا في بناء مستقبل تقني حر ومستقل عن عمالقة التكنولوجيا',
     
+    // Tech Donations Link
+    supportTechStartups: 'ادعم الشركات الناشئة التقنية',
+    helpBuildAlternatives: 'ساعد في بناء بدائل تقنية حرة ومستقلة عن عمالقة التكنولوجيا',
+    
     // Amazon Alternatives
     amazonAlternatives: 'بدائل أمازون',
     globalMarketplace: 'معمورة',
@@ -406,6 +410,10 @@ const translations = {
     regularUpdates: 'Regular updates on development progress',
     openSource: 'All projects are open source and free',
     techAppeal: '💻 Help us build a free and independent tech future away from big tech giants',
+    
+    // Tech Donations Link
+    supportTechStartups: 'Support Tech Startups',
+    helpBuildAlternatives: 'Help build free and independent tech alternatives away from big tech giants',
     
     // Amazon Alternatives
     amazonAlternatives: 'Amazon Alternatives',

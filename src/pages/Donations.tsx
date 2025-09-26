@@ -102,6 +102,36 @@ export function DonationsPage() {
         </div>
       </section>
 
+      {/* Tech Donations Link Section */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Link
+              to="/tech-donations"
+              className="block bg-white p-8 rounded-lg shadow-lg border-2 border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all transform hover:scale-105 group"
+            >
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <ShoppingCart className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+                  {t('supportTechStartups')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
+                  {t('helpBuildAlternatives')}
+                </p>
+                <div className="mt-6">
+                  <span className="inline-flex items-center gap-2 text-blue-600 font-bold group-hover:text-blue-700 transition-colors">
+                    <span>{t('learnMore')}</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Important Notice */}
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
