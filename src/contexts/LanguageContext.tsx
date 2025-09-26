@@ -200,9 +200,9 @@ const translations = {
     
     // Amazon Alternatives
     amazonAlternatives: 'بدائل أمازون',
-    globalMarketplace: 'معمورة',
+    replaceAmazon: 'معمورة',
+    replaceAmazonDesc: 'منصة تجارة عالمية حرة ومستقلة تدعم التجار المحليين وتحمي بيانات المستخدمين',
     globalMarketplaceEn: 'Global Marketplace',
-    globalMarketplaceDesc: 'منصة تجارة عالمية حرة ومستقلة تدعم التجار المحليين وتحمي بيانات المستخدمين',
     
     // Microsoft Alternatives
     microsoftAlternatives: 'بدائل مايكروسوفت',
@@ -417,9 +417,9 @@ const translations = {
     
     // Amazon Alternatives
     amazonAlternatives: 'Amazon Alternatives',
-    globalMarketplace: 'Global Marketplace',
+    replaceAmazon: 'Global Marketplace',
+    replaceAmazonDesc: 'Free and independent global commerce platform supporting local merchants and protecting user data',
     globalMarketplaceEn: 'Global Marketplace',
-    globalMarketplaceDesc: 'Free and independent global commerce platform supporting local merchants and protecting user data',
     
     // Microsoft Alternatives
     microsoftAlternatives: 'Microsoft Alternatives',
